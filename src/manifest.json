@@ -1,0 +1,32 @@
+{
+    "manifest_version": 3,
+    "name": "메모 익스텐션",
+    "version": "1.0",
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "/logo.png",
+        "48": "/logo.png",
+        "128": "/logo.png"
+      }
+    },
+    "commands": {
+      "toggle-memo": {
+        "suggested_key": {
+          "windows": "Ctrl+Shift+Y",
+          "mac": "Command+Shift+Y",
+          "chromeos": "Ctrl+Shift+U",
+          "linux": "Ctrl+Shift+J"
+        },
+        "description": "Toggle Memo"
+      }
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "permissions": [
+      "storage",
+      "activeTab"
+    ]
+  }
+  
